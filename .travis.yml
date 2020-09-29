@@ -5,7 +5,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t Mark-3110/docker-react -f Dockerfile.dev .
+  - docker build -t mark-3110/docker-react -f Dockerfile.dev .
 
 script:
   - docker run -e CI=true stephengrider/docker-react npm run test
